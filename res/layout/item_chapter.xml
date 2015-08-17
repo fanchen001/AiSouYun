@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chapter_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="@drawable/selector_white"
+    android:paddingLeft="13.0dip"
+    android:paddingRight="13.0dip" >
+
+    <TextView
+        android:id="@+id/tv_chapter_continue_read_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7.0dip"
+        android:text="@string/activity_directory_continue_read"
+        android:textColor="@color/theme"
+        android:textSize="@dimen/tertiary_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_chapter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7.0dip"
+        android:layout_toLeftOf="@+id/finish_image"
+        android:layout_toRightOf="@+id/continue_read_text"
+        android:maxLines="2"
+        android:text="title"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/tertiary_text" />
+
+    <ImageView
+        android:id="@+id/iv_chapter_finish_image"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_cache_finish" />
+
+</RelativeLayout>

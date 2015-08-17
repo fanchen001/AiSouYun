@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CommitPrefEdits" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ParcelCreator" severity="ignore" />
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+    <issue id="ShowToast" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore" />
+    <issue id="ValidFragment" severity="ignore" />
+    <issue id="WrongCall" severity="ignore" />
+</lint>

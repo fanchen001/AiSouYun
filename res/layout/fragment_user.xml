@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="139.0dip"
+                android:layout_below="@+id/back_layout" >
+
+                <FrameLayout
+                    android:layout_width="106.0dip"
+                    android:layout_height="106.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32.0dip" >
+
+                    <com.fanchen.aisou.view.RoundImageView
+                        android:id="@+id/riv_info_avatar"
+                        android:layout_width="106.0dip"
+                        android:layout_height="106.0dip"
+                        android:src="@drawable/empty_photo"
+                        app:riv_border_color="#ffff80ab"
+                        app:riv_border_width="1.0px"
+                        app:riv_oval="true" />
+
+                    <ImageView
+                        android:layout_width="106.0dip"
+                        android:layout_height="106.0dip"
+                        android:src="@drawable/image_avatar_shadow" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="27.0dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.0dip"
+                    android:text="@string/activity_user_info_label"
+                    android:textColor="@color/tertiary_text"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layer_list_white_card"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="38.0dip"
+                    android:background="@drawable/selector_transparent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dip"
+                        android:text="@string/username"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <TextView
+                        android:id="@+id/tv_info_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13.0dip"
+                        android:text="username"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_dimen"
+                    android:layout_marginLeft="70.0dip"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="38.0dip"
+                    android:background="@drawable/selector_transparent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dip"
+                        android:text="@string/nickname"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <TextView
+                        android:id="@+id/tv_info_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13.0dip"
+                        android:text="username"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_dimen"
+                    android:layout_marginLeft="70.0dip"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="38.0dip"
+                    android:background="@drawable/selector_transparent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dip"
+                        android:text="@string/sex"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <TextView
+                        android:id="@+id/tv_info_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13.0dip"
+                        android:text="username"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_dimen"
+                    android:layout_marginLeft="70.0dip"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:id="@+id/birthday_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38.0dip"
+                    android:background="@drawable/selector_transparent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dip"
+                        android:text="@string/activity_user_birthday"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <TextView
+                        android:id="@+id/tv_info_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7.0dip"
+                        android:layout_toLeftOf="@+id/birthday_arrow"
+                        android:text="@string/activity_user_birthday_format"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/birthday_arrow"
+                        android:layout_width="11.0dip"
+                        android:layout_height="7.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13.0dip"
+                        android:src="@drawable/icon_arrow_down" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_dimen"
+                    android:layout_marginLeft="70.0dip"
+                    android:background="@color/divider" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_book_collect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38.0dip"
+                    android:background="@drawable/selector_transparent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dip"
+                        android:text="@string/activity_user_collect"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/account_arrow"
+                        android:layout_width="7.0dip"
+                        android:layout_height="11.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13.0dip"
+                        android:src="@drawable/icon_arrow_right_dark" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="27.0dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.0dip"
+                    android:text="@string/activity_user_secure_label"
+                    android:textColor="@color/tertiary_text"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layer_list_white_card"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_change_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38.0dip"
+                    android:background="@drawable/selector_transparent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13.0dip"
+                        android:text="@string/activity_user_account"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7.0dip"
+                        android:layout_toLeftOf="@+id/account_arrow"
+                        android:text="@string/activity_user_change"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/account_arrow"
+                        android:layout_width="7.0dip"
+                        android:layout_height="11.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13.0dip"
+                        android:src="@drawable/icon_arrow_right_dark" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_info_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="13.0dip"
+                android:layout_marginRight="13.0dip"
+                android:layout_marginTop="16.0dip"
+                android:background="@drawable/selector_button_white_red_border_small_radius"
+                android:text="@string/activity_user_logout"
+                android:textColor="@color/color_selector_red"
+                android:textSize="@dimen/primary_text" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

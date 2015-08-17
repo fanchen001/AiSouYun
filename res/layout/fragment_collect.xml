@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <GridView
+        android:id="@+id/gv_collect"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="13.0dip"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:horizontalSpacing="12dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="12dp" />
+
+    <com.fanchen.aisou.view.LoadingView
+        android:id="@+id/loadingView_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:loadingText="玩命加载中..." />
+
+</FrameLayout>

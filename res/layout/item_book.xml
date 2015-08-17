@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="122.0dip"
+    android:background="@drawable/selector_white" >
+
+    <ImageView
+        android:id="@+id/iv_cover_image"
+        android:layout_width="76.0dip"
+        android:layout_height="101.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="13.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/shape_yellow_border"
+        android:src="@drawable/empty_photo1" />
+
+    <ImageView
+        android:id="@+id/tag_image"
+        android:layout_width="16.0dip"
+        android:layout_height="33.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="13.0dip"
+        android:layout_marginTop="10.0dip"
+        android:src="@drawable/icon_tag_cooperate"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="13.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_toRightOf="@+id/iv_cover_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:maxLines="2"
+            android:text="title"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/primary_text" />
+
+        <TextView
+            android:id="@+id/tv_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.0dip"
+            android:singleLine="true"
+            android:text="@string/activity_base_book_list_state"
+            android:textColor="@color/primary_text"
+            android:textSize="11.0dip" />
+
+        <TextView
+            android:id="@+id/tv_author_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.0dip"
+            android:singleLine="true"
+            android:text="@string/activity_base_book_list_author"
+            android:textColor="@color/primary_text"
+            android:textSize="11.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_update_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/activity_base_book_list_update"
+                android:textColor="@color/primary_text"
+                android:textSize="11.0dip" />
+
+            <TextView
+                android:id="@+id/end_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.0dip"
+                android:singleLine="true"
+                android:text="@string/activity_base_book_list_end"
+                android:textColor="@color/iqing_red"
+                android:textSize="11.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

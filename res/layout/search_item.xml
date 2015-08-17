@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_item_bg"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <ImageView
+            android:id="@+id/search_ico"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/search_ico"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="0.0dip" >
+
+            <TextView
+                android:id="@+id/search_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:ellipsize="end"
+                android:gravity="left|center"
+                android:includeFontPadding="false"
+                android:padding="0.0dip"
+                android:singleLine="true"
+                android:text="偏偏喜欢你-陈百强.rar_免费高速下载|百度云网盘-分享无限制 "
+                android:textColor="#000000"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_share_res"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/res_share" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_item_top"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/search_ico"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:lines="2"
+            android:padding="0.0dip"
+            android:text="2012年11月2日 ... 偏偏喜欢你-陈百强.rar. 保存至网盘下载(268.6M)二维码举报. 分享至. 新浪微博QQ 空间腾讯微博人人网网易微博 ... "
+            android:textColor="#aa000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/search_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_toRightOf="@id/search_ico"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:padding="0.0dip"
+            android:singleLine="true"
+            android:text="www.baidu.com"
+            android:textColor="#00958F"
+            android:textSize="10.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

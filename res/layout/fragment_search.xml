@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_search_main"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <github.chenupt.dragtoplayout.DragTopLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- top view -->
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/actionbar_bg2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/search_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp" >
+
+                <EditText
+                    android:id="@+id/ed_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@+id/ed_search"
+                    android:layout_marginRight="15dp"
+                    android:background="#ffffff" >
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/ib_search"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/search_right" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- content view -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+            <LinearLayout
+                android:id="@+id/drag_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.fanchen.aisou.view.PagerSlidingTabStrip
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dip"
+                    android:background="@color/actionbar_bg2" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".MainActivity" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_auto_sreach_word_searchfragment"
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </github.chenupt.dragtoplayout.DragTopLayout>
+
+</LinearLayout>

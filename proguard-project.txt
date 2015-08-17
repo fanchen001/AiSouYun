@@ -1,0 +1,68 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-libraryjars libs/activation.jar
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/additionnal.jar
+-libraryjars libs/android-support-v7-recyclerview.jar
+-libraryjars libs/Bmob_Push_V0.6beta_20150408.jar
+-libraryjars libs/BmobSDK_V3.3.6_0427.jar
+-libraryjars libs/jericho-html-3.1.jar
+-libraryjars libs/mail.jar
+-libraryjars libs/mframework.jar
+-libraryjars libs/nineoldandroids-2.4.0.jar
+-libraryjars libs/open_sdk_r5043_lite.jar
+-libraryjars libs/ShareSDK-Core-2.5.9.jar
+-libraryjars libs/ShareSDK-QQ-2.5.9.jar
+-libraryjars libs/ShareSDK-QZone-2.5.9.jar
+-libraryjars libs/ShareSDK-ShortMessage-2.5.9.jar
+-libraryjars libs/ShareSDK-SinaWeibo-2.5.9.jar
+-libraryjars libs/ShareSDK-Wechat-2.5.9.jar
+-libraryjars libs/ShareSDK-Wechat-Core-2.5.9.jar
+-libraryjars libs/ShareSDK-Wechat-Moments-2.5.9.jar
+-keep public class * extends android.app.Fragment  
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep class cn.sharesdk.**{*;}
+-keep class com.sina.**{*;}
+-keep class **.R$* {*;}
+-keep class **.R{*;}
+-dontwarn cn.sharesdk.**
+-dontwarn **.R$*
+-keep public class com.android.vending.licensing.ILicensingService
+
+
+
+-dontwarn cn.bmob.**
+-dontwarn net.htmlparser.**
+-dontwarn com.nineoldandroids.**
+-dontwarn cn.sharesdk.system.text.**
+-dontwarn cn.sharesdk.wechat.moments.**
+-dontwarn myjava.awt.datatransfer.**
+-dontwarn org.apache.harmony.awt.**
+-dontwarn com.sun.mail.**
+-dontwarn javax.mail.**
+-dontwarn myjava.awt.datatransfer.**

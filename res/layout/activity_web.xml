@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/line_gray" >
+
+    <LinearLayout
+        android:id="@+id/about_layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dip"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/web_load_pro"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="8dip"
+            android:max="100"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/wb_web_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </WebView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/actionbar_bg" >
+
+        <ImageView
+            android:id="@+id/iv_web_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="MyOnclick"
+            android:src="@drawable/ic_btn_find_prev" />
+
+        <ImageView
+            android:id="@+id/iv_web_next"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="MyOnclick"
+            android:src="@drawable/ic_btn_find_next" />
+
+        <ImageView
+            android:id="@+id/iv_web_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="MyOnclick"
+            android:src="@drawable/default_ptr_rotate" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            style="@style/login_logo"
+            android:contentDescription="@null" />
+
+        <LinearLayout style="@style/login_content" >
+
+            <EditText
+                android:id="@+id/ed_account"
+                style="@style/login_input"
+                android:drawableLeft="@drawable/icon_login_user"
+                android:hint="@string/login_account_hint"
+                android:inputType="text" />
+
+            <View style="@style/line_gray_horizontal" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    style="@style/login_input"
+                    android:drawableLeft="@drawable/icon_login_lock"
+                    android:hint="@string/login_password_hint"
+                    android:inputType="textPassword"
+                    android:paddingRight="40.0dip" />
+
+                <ImageView
+                    android:id="@+id/view_password"
+                    style="@style/login_view_pwd"
+                    android:contentDescription="@null" />
+            </FrameLayout>
+
+            <View style="@style/line_gray_horizontal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            style="@style/login_button"
+            android:text="@string/login" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/tv_login_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/login_icon_qq"
+            android:drawablePadding="10dip"
+            android:text="用QQ账号登录"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/go_register"
+            style="@style/login_button_bottom"
+            android:text="@string/register_account" />
+    </LinearLayout>
+
+</ScrollView>

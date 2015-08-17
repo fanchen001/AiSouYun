@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_transparent" >
+
+    <com.fanchen.aisou.view.RoundImageView
+        android:id="@+id/riv_cover_image"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+
+    <TextView
+        android:id="@+id/tv_category_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/riv_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7.0dip"
+        android:text="@string/label_category"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/tertiary_text" />
+
+</RelativeLayout>
